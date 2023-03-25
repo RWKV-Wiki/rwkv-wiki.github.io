@@ -1,0 +1,35 @@
+site_name: RWKV Wiki
+nav:
+  - 简介:
+    - 欢迎来到 RWKV Wiki: index.md
+    - 常见问答: intro/faq.md
+    - RWKV 简史: intro/brief-history.md
+    - 如何参与: intro/contribute.md
+    - 格式手册: intro/format.md
+    - 致谢: intro/thanks.md
+  - 技术细节:
+    - RWKV 结构总览: model/summary.md
+    - 术语列表: model/terms.md
+    - WKV 计算: model/wkv.md
+    - Time Mix: model/time-mix.md
+    - Channel Mix: model/channel-mix.md
+copyright: <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可。
+theme:
+  name: material
+  language: zh
+  logo: img/logo.png
+  favicon: favicon.png
+  features:
+    - navigation.instant
+    - navigation.tabs
+  palette:
+    primary: grey
+extra_javascript:
+  - /assets/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+plugins:
+  - search
