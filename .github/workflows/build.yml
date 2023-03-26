@@ -20,6 +20,8 @@ jobs:
       - run: |
           curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python3
           pipenv install
+      - name: Install MkDocs dependencies
+        run: pipenv install ./mkdocs-material
       - name: Page Build
         run: |
           ./scripts/pre-build.sh
