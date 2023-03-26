@@ -1,0 +1,33 @@
+name: Build
+
+on:
+  push:
+    branches:    
+      - master
+
+jobs:
+  build-and-deploy:
+    name: Build & Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.7.0
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v4.5.0
+        with:
+          python-version: '3.10'
+          cache: pipenv
+      - run: |
+          curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python3
+          pipenv install
+      - name: Page Build
+        run: |
+          ./scripts/pre-build.sh
+          pipenv run mkdocs build -v
+          ./scripts/post-build.sh
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-github-pages@v3.1.12
+        with:
+          github_token: ${{ secrets.DEPLOY_TOKEN }}
+          publish_dir: ./site
+          force_orphan: true
