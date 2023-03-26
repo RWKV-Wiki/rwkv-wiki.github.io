@@ -9,9 +9,9 @@
 * 文字教程：[PENG Bo：开源1.5/3/7B中文小说模型：显存3G就能跑7B模型，几行代码即可调用](https://zhuanlan.zhihu.com/p/609154637)
 * 视频教程：[ChatRWKV本地部署教程](https://www.bilibili.com/video/BV1s84y1w77j/)
 * 懒人包：
-  * 命令行：[ChatRWKV懒人版python包](https://zhuanlan.zhihu.com/p/616351661)
-  * GUI：[ChatRWKV桌面版懒人包](https://zhuanlan.zhihu.com/p/615655028)
-  * Web：[chatRWKV将作者的demo网页在本地调用。](https://zhuanlan.zhihu.com/p/616815736)
+    * 命令行：[ChatRWKV懒人版python包](https://zhuanlan.zhihu.com/p/616351661)
+    * GUI：[ChatRWKV桌面版懒人包](https://zhuanlan.zhihu.com/p/615655028)
+    * Web：[chatRWKV将作者的demo网页在本地调用。](https://zhuanlan.zhihu.com/p/616815736)
 
 ## ChatRWKV 网页版
 
