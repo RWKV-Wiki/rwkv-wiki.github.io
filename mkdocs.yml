@@ -3,6 +3,7 @@ nav:
   - 简介:
     - 欢迎来到 RWKV Wiki: index.md
     - 常见问答: intro/faq.md
+    - 相关资源: intro/resources.md
     - RWKV 简史: intro/brief-history.md
     - 如何参与: intro/contribute.md
     - 格式手册: intro/format.md
