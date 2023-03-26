@@ -25,14 +25,14 @@ title: RWKV Wiki
 * Self-Attention 使用的缩放点积注意力并不包含 Token 以及 Token 之间的位置信息。
 * 整个序列中的每个 Token 都需要相互运算，导致训练与推断复杂度不佳（$O(n^2)$）。
 
-RWKV 通过使用 [WKV 计算](/model/wkv.md) 代替 Self-Attention 同时解决了上述两个问题：
+RWKV 通过使用 [WKV 计算](model/wkv.md) 代替 Self-Attention 同时解决了上述两个问题：
 
 * WKV 计算过程直接向 Token 引入了具有平移不变性的位置编码，不需要引入额外的位置编码。
 * Token 之间无需相互运算，WKV 计算过程只对各 Token 分别变换并累加结果（$O(n)$）。
 
 此外，WKV 计算也可以实现类似 Self-Attention 的 Cache，从而在连续推断时也有 $O(n)$ 的时间复杂度。
 
-更多常见问答请见 [FAQ](/intro/faq.md)。
+更多常见问答请见 [FAQ](intro/faq.md)。
 
 ## 致谢
 
@@ -40,4 +40,4 @@ RWKV 通过使用 [WKV 计算](/model/wkv.md) 代替 Self-Attention 同时解决
 
 罗马不是一天建成的，RWKV 的建设也离不开许多人的帮助，而且需要更多有志之士的参与。
 
-受篇幅所限，完整的致谢名单不能在此列出，[请点击这里访问](/intro/thanks.md)。
+受篇幅所限，完整的致谢名单不能在此列出，[请点击这里访问](intro/thanks.md)。
