@@ -18,8 +18,7 @@ theme:
   name: null
   custom_dir: 'mkdocs-material/material'
   language: zh
-  favicon: favicon.png
-  icon:
+  icon: favicon.png
   logo: img/logo.png
   features:
     - navigation.instant
