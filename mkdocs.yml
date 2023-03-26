@@ -42,5 +42,7 @@ extra_javascript:
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
+  - footnotes
+  - md_in_html
 plugins:
   - search
