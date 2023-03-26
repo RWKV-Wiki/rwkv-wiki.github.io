@@ -26,7 +26,7 @@ jobs:
           pipenv run mkdocs build -v
           ./scripts/post-build.sh
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-github-pages@v3.9.2
+        uses: peaceiris/actions-github-pages@v3
         with:
           github_token: ${{ secrets.DEPLOY_TOKEN }}
           publish_dir: ./site
